@@ -50,3 +50,29 @@ Processing by MoviesController#index as HTML
   Rendered movies/index.html.erb within layouts/application (10.2ms)
   Rendered layouts/_flash.erb (0.4ms)
 Completed 200 OK in 418ms (Views: 415.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 76.102.204.95 at 2022-10-04 17:59:47 +0000
+Cannot render console from 76.102.204.95! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (8.5ms)
+  Rendered layouts/_flash.erb (0.5ms)
+Completed 200 OK in 284ms (Views: 282.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 76.102.204.95 at 2022-10-04 17:59:48 +0000
+Cannot render console from 76.102.204.95! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 76.102.204.95 at 2022-10-04 17:59:48 +0000
+Cannot render console from 76.102.204.95! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 76.102.204.95 at 2022-10-04 17:59:48 +0000
+Cannot render console from 76.102.204.95! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 76.102.204.95 at 2022-10-04 17:59:48 +0000
+Cannot render console from 76.102.204.95! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
