@@ -21,6 +21,4 @@ class Movie < ActiveRecord::Base
       movie.order(type)
     end
   end
-
-  df
 end
