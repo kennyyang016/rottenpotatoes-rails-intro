@@ -7,12 +7,16 @@ class MoviesController < ApplicationController
     end
   
     def index
+      # byebug
       @all_ratings = Movie.all_ratings
+      @selected = params[:order]
       if params[:ratings].nil?
-        @movies = Movie.with_ratings(nil)
+        @movies = Movie.with_order(Movie.with_ratings(nil), 
+          params[:order])
         @ratings_to_show = @all_ratings
       else
-        @movies = Movie.with_ratings(params[:ratings].keys)
+        @movies = Movie.with_order(Movie.with_ratings(
+          params[:ratings].keys), params[:order])
         @ratings_to_show = params[:ratings]
       end
     end

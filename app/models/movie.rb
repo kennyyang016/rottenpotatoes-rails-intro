@@ -11,7 +11,14 @@ class Movie < ActiveRecord::Base
   end
 
   def self.all_ratings()
-    list = ['G', 'PG', 'PG-13', 'R']
-    list
+    Movie.uniq.pluck(:rating)
+  end
+
+  def self.with_order(movie, type)
+    if type.nil?
+      movie
+    else
+      movie.order(type)
+    end
   end
 end
